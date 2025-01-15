@@ -22,7 +22,16 @@ export const ko = defineConfig({
       next: "다음 페이지"
     },
     lastUpdated: {
-      text: "마지막 업데이트"
+      text: "마지막 업데이트",
+      formatOptions: {
+        year: "2-digit",
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+        timeZoneName: "short"
+      }
     },
 
     sidebar: sidebar()
