@@ -8,7 +8,19 @@ export const en = defineConfig({
   themeConfig: {
     nav: nav(),
 
-    sidebar: sidebar()
+    sidebar: sidebar(),
+
+    lastUpdated: {
+      formatOptions: {
+        year: "2-digit",
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+        timeZoneName: "short"
+      }
+    }
   }
 });
 
